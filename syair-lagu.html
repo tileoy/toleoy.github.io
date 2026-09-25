@@ -91,10 +91,29 @@ h2 {
 
 .artis {
     color: #cbd5e1;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-/* CARD LAGU */
+/* PEMUTAR MP3 */
+.player {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.player h3 {
+    color: #bfdbfe;
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+}
+
+/* LIRIK */
 .lagu {
     background: rgba(255,255,255,0.10);
     border: 1px solid rgba(255,255,255,0.15);
@@ -112,6 +131,7 @@ h2 {
     color: #e5e7eb;
     font-size: 17px;
     line-height: 2;
+    text-align: center;
     white-space: pre-line;
 }
 
@@ -191,14 +211,26 @@ footer {
             Glenn Fredly
         </div>
 
+        <!-- PEMUTAR MP3 -->
+        <div class="player">
+
+            <h3>🎧 Dengarkan Lagu</h3>
+
+            <audio controls>
+                <source src="lagu-glenn.mp3" type="audio/mpeg">
+
+                Browser kamu tidak mendukung
+                pemutar audio.
+            </audio>
+
+        </div>
+
+        <!-- LIRIK -->
         <div class="lagu">
 
-            <h3>🎵 Tentang Lagu</h3>
+            <h3>🎤 Syair Lagu</h3>
 
             <div class="lirik">
-                <!-- Tempelkan lirik yang kamu miliki
-                secara manual di bagian ini. -->
-
 Jangan kau ganggu hidupku lagi
 Sudah jelas kini yang kau mau
 Kau sakiti hati ini
@@ -237,12 +269,18 @@ Mulai kini semua
 Terserah
 Ha uh
 
+
             </div>
 
+            <!-- INFORMASI LAGU -->
             <div class="info">
+
                 <strong>Judul:</strong> Terserah<br>
+
                 <strong>Penyanyi:</strong> Glenn Fredly<br>
+
                 <strong>Genre:</strong> Pop
+
             </div>
 
         </div>
