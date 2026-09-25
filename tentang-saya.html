@@ -3,16 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Saya</title>
+    <title>Tentang Saya - Tile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #111827, #2563eb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 25px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .foto {
+            text-align: center;
+        }
+
+        .foto img {
+            width: 260px;
+            height: 330px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .isi {
+            flex: 1;
+        }
+
+        .judul-kecil {
+            color: #93c5fd;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .deskripsi {
+            color: #e5e7eb;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 18px;
+            border-radius: 12px;
+            border-left: 4px solid #60a5fa;
+        }
+
+        .item strong {
+            color: #93c5fd;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+            }
+
+            .foto img {
+                width: 220px;
+                height: 280px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .item {
+                text-align: left;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Tentang Saya</h1>
+    <div class="container">
 
-    <p>Nama saya Tile.</p>
-    <p>Saya adalah siswa kelas XII.</p>
-    <p>Hobi saya adalah berenang.</p>
-    <p>Alamat rumah saya di Perumahan Alam Indah, Cipondoh.</p>
+        <!-- FOTO PROFIL -->
+        <div class="foto">
+            <img src="foto-profil.jpg" alt="Foto Profil Tile">
+        </div>
+
+        <!-- INFORMASI DIRI -->
+        <div class="isi">
+
+            <div class="judul-kecil">
+                Tentang Saya
+            </div>
+
+            <h1>Halo, saya Tile!</h1>
+
+            <p class="deskripsi">
+                Saya adalah seorang siswa kelas XII yang memiliki
+                hobi berenang. Berikut adalah sedikit informasi
+                tentang diri saya.
+            </p>
+
+            <div class="data">
+
+                <div class="item">
+                    <strong>Nama</strong>
+                    Tile
+                </div>
+
+                <div class="item">
+                    <strong>Kelas</strong>
+                    XII
+                </div>
+
+                <div class="item">
+                    <strong>Hobi</strong>
+                    Berenang
+                </div>
+
+                <div class="item">
+                    <strong>Alamat</strong>
+                    Perumahan Alam Indah, Cipondoh
+                </div>
+
+            </div>
+
+            <footer>
+                © 2026 Tile | Personal Profile
+            </footer>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
