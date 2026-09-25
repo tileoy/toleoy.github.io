@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Berita AAL - Website Tile</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(255,255,255,0.12);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 30px;
+    background: linear-gradient(
+        135deg,
+        rgba(15,23,42,0.9),
+        rgba(37,99,235,0.8)
+    );
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #dbeafe;
+}
+
+/* NAVIGASI */
+nav {
+    padding: 18px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* ISI BERITA */
+.content {
+    padding: 35px;
+}
+
+.label {
+    color: #93c5fd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.tanggal {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* GAMBAR */
+.gambar {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    border: 3px solid rgba(255,255,255,0.7);
+}
+
+/* ARTIKEL */
+.artikel {
+    color: #e5e7eb;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.artikel p {
+    margin-bottom: 20px;
+}
+
+/* HIGHLIGHT */
+.highlight {
+    background: rgba(96,165,250,0.15);
+    border-left: 4px solid #60a5fa;
+    padding: 18px;
+    border-radius: 12px;
+    margin: 25px 0;
+    color: #dbeafe;
+}
+
+/* TOMBOL */
+.tombol {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: rgba(0,0,0,0.3);
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .content {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .gambar {
+        height: 220px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Website Tile</h1>
+        <p><em>Dimana ada Tile, disitu ada Tole</em></p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="./">Beranda</a>
+        <a href="tentang-saya.html">Tentang Saya</a>
+        <a href="sekolahku.html">Sekolahku</a>
+        <a href="syair-lagu.html">Syair Lagu</a>
+    </nav>
+
+    <!-- ISI BERITA -->
+    <main class="content">
+
+        <div class="label">Berita AAL</div>
+
+        <h2>
+            1.173 Calon Perwira Remaja TNI-Polri Terima Pembekalan
+        </h2>
+
+        <div class="tanggal">
+            20 Juli 2026 | Jakarta
+        </div>
+
+        <!-- GANTI FOTO DI SINI -->
+        <img 
+            src="foto-aal.jpg" 
+            alt="Kegiatan Calon Perwira Remaja TNI"
+            class="gambar"
+        >
+
+        <div class="artikel">
+
+            <p>
+                Rangkaian pembentukan calon perwira TNI terus berlanjut
+                setelah para calon menyelesaikan berbagai tahapan pendidikan
+                dan seleksi. Pada 20 Juli 2026, sebanyak
+                <strong>1.173 Calon Perwira Remaja (Capaja) TNI-Polri</strong>
+                menerima pembekalan sebelum memasuki tahap berikutnya.
+            </p>
+
+            <p>
+                Para calon perwira tersebut berasal dari Akademi Militer
+                (Akmil), Akademi Angkatan Laut (AAL), Akademi Angkatan Udara
+                (AAU), dan Akademi Kepolisian (Akpol). Kegiatan pembekalan
+                menjadi salah satu rangkaian penting dalam perjalanan mereka
+                menuju tahap pengabdian sebagai perwira.
+            </p>
+
+            <div class="highlight">
+                <strong>1.173 Calon Perwira Remaja</strong> dari Akmil, AAL,
+                AAU, dan Akpol mengikuti pembekalan sebagai bagian dari
+                rangkaian persiapan sebelum memasuki tahap pengabdian.
+            </div>
+
+            <p>
+                Pembekalan tersebut diberikan oleh Menteri Pertahanan RI,
+                Panglima TNI, dan Kapolri. Kegiatan ini memberikan pemahaman
+                kepada para calon perwira mengenai tanggung jawab yang akan
+                mereka emban setelah menyelesaikan seluruh rangkaian
+                pendidikan.
+            </p>
+
+            <p>
+                Bagi calon perwira dari Akademi Angkatan Laut (AAL),
+                kegiatan tersebut menjadi bagian dari perjalanan menuju
+                pengabdian di lingkungan TNI Angkatan Laut. Pendidikan
+                yang telah dijalani tidak hanya mencakup kemampuan akademik,
+                tetapi juga pembentukan karakter, kedisiplinan, kepemimpinan,
+                serta kemampuan bekerja dalam lingkungan TNI.
+            </p>
+
+            <p>
+                Dalam rangkaian tersebut, para calon perwira juga mendapatkan
+                berbagai pembekalan yang berkaitan dengan tugas dan tanggung
+                jawab sebagai seorang perwira. Pembekalan menjadi salah satu
+                tahapan untuk mempersiapkan mereka menghadapi lingkungan tugas
+                setelah menyelesaikan pendidikan.
+            </p>
+
+            <p>
+                Proses pendidikan dan pembinaan yang telah dilalui menjadi
+                bagian penting dalam mempersiapkan sumber daya manusia TNI.
+                Para calon perwira dari masing-masing akademi nantinya akan
+                menjalankan tugas sesuai dengan matra dan bidang masing-masing.
+            </p>
+
+            <p>
+                Bagi para calon dari AAL, perjalanan pendidikan tersebut
+                menjadi awal menuju pengabdian sebagai perwira TNI Angkatan
+                Laut. Setelah seluruh tahapan pendidikan dan pembekalan
+                selesai, mereka akan memasuki tahap berikutnya sebelum resmi
+                menjalankan tugas sebagai perwira.
+            </p>
+
+            <p>
+                Dengan berlanjutnya rangkaian pembekalan tersebut, para
+                calon perwira semakin mendekati tahap akhir dari proses
+                pendidikan mereka. Tahapan ini menjadi bagian dari perjalanan
+                panjang sebelum nantinya mereka mengemban tugas dan tanggung
+                jawab sebagai perwira TNI.
+            </p>
+
+        </div>
+
+        <a href="index.html" class="tombol">
+            ← Kembali ke Beranda
+        </a>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Tile | Personal Website
+    </footer>
+
+</div>
+
+</body>
+</html>
